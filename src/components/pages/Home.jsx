@@ -6,8 +6,8 @@ import { fetchPosts } from "../../store/postsReducer";
 import { Search } from "../ui/Search";
 import {PostsPagination} from "../ui/PostsPagination";
 
-function Home() {        
-    const posts = useSelector(state => state.posts.posts);    
+function Home() {   
+    const filteredPosts = useSelector(state => state.posts.filteredPosts);      
     const dispatch = useDispatch();    
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function Home() {
         <>            
             <Search />                                 
             {
-                !posts.length ? <Preloader /> : <PostsList /> 
+                !filteredPosts.length ? <Preloader /> : <PostsList /> 
             }
             <PostsPagination />            
             
