@@ -1,7 +1,7 @@
 {
   "name": "test_mitra",
   "version": "0.2.0",
-  "homepage": "https://inoris7.github.io/MitraSoft/",
+  "homepage": "https://inoris7.github.io/MitraSoft",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
