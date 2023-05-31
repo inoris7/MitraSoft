@@ -11,7 +11,7 @@ function PostsItem(props) {
     return (
         <Card style={{ width: '18rem'}}>
             <Link to={`/user/${userId}`}><Card.Img variant="top" src={avatar} /></Link>
-            <Card.Body style={{ display: 'flex', flexDirection: 'column' }}>
+            <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>
                      {body}
