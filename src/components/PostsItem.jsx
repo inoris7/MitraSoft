@@ -9,9 +9,9 @@ function PostsItem(props) {
     const {title, body, id, userId} = props;    
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem'}}>
             <Link to={`/user/${userId}`}><Card.Img variant="top" src={avatar} /></Link>
-            <Card.Body>
+            <Card.Body style={{ display: 'flex', flexDirection: 'column' }}>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>
                      {body}
