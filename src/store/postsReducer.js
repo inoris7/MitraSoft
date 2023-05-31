@@ -12,7 +12,7 @@ export const SORT_POSTS = "SORT_POSTS";
 export const postsReducer = (state = defaultState, {type, payload}) => {
     switch (type) {
         case SET_POSTS:
-            return {...state, posts: payload.data, filteredPosts: state.posts}
+            return {...state, posts: payload.data, filteredPosts: payload.data}
         case SEARCH_POSTS:
             return {...state, filteredPosts: [...state.posts.filter(
                 item => item.title.toLowerCase().includes(payload.toLowerCase())

@@ -7,7 +7,7 @@ import { Search } from "../ui/Search";
 import {PostsPagination} from "../ui/PostsPagination";
 
 function Home() {   
-    const filteredPosts = useSelector(state => state.posts.filteredPosts);      
+    const posts = useSelector(state => state.posts.posts);      
     const dispatch = useDispatch();    
 
     useEffect(() => {
@@ -18,7 +18,7 @@ function Home() {
         <>            
             <Search />                                 
             {
-                !filteredPosts.length ? <Preloader /> : <PostsList /> 
+                !posts.length ? <Preloader /> : <PostsList /> 
             }
             <PostsPagination />            
             
