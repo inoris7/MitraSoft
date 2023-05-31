@@ -6,13 +6,21 @@ const fetchUserFromServer = (num) => axios.get(`https://jsonplaceholder.typicode
 const fetchUserPostsFromServer = (num) => axios.get(`https://jsonplaceholder.typicode.com/users/${num}/posts`);
 
 function* fetchUserWorker({payload}) {
-    const data = yield call(fetchUserFromServer, payload);    
-    yield put(setUser(data));
+    try {
+        const data = yield call(fetchUserFromServer, payload);    
+        yield put(setUser(data));
+    } catch {
+        throw new Error('Error fetching User frrom server')
+    }
 }
 
 function* fetchUserPostsWorker({payload}) {
-    const data = yield call(fetchUserPostsFromServer, payload);    
-    yield put(setUserPosts(data));
+    try {
+        const data = yield call(fetchUserPostsFromServer, payload);    
+        yield put(setUserPosts(data));
+    } catch {
+        throw new Error('Error fetching User posts frrom server')
+    }
 }
 
 export function* userWatcher() {
