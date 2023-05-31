@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MitraSoft/static/css/main.4e19a667.css",
-    "main.js": "/MitraSoft/static/js/main.d2e5c374.js",
+    "main.js": "/MitraSoft/static/js/main.c16ef5a8.js",
     "static/media/avatar.webp": "/MitraSoft/static/media/avatar.62fedd715608c0ca5006.webp",
     "static/media/my_avatar.webp": "/MitraSoft/static/media/my_avatar.51e2ed56225dec279bec.webp",
     "index.html": "/MitraSoft/index.html",
     "main.4e19a667.css.map": "/MitraSoft/static/css/main.4e19a667.css.map",
-    "main.d2e5c374.js.map": "/MitraSoft/static/js/main.d2e5c374.js.map"
+    "main.c16ef5a8.js.map": "/MitraSoft/static/js/main.c16ef5a8.js.map"
   },
   "entrypoints": [
     "static/css/main.4e19a667.css",
-    "static/js/main.d2e5c374.js"
+    "static/js/main.c16ef5a8.js"
   ]
 }
